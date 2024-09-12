@@ -36,3 +36,24 @@ OUTPUT:
 Enter a string: C++AndDataStructuresLab
 baLserutcurtSataDdnA++C
 */
+
+//ALTERNATE METHOD
+
+#include <iostream>
+using namespace std;
+
+void print_rev(char *str)
+{
+    if (*str!='\0')
+    {
+        print_rev(str+1);
+        cout<<*str;
+    }
+}
+int main()
+{
+    char str[]="JiyaPalod";
+    print_rev(str);
+}
+
+//OUTPUT: dolaPayiJ
